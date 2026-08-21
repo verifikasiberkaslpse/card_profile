@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Minimalist Profile Card</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed-dim": "#c3c0ff",
+                        "error-container": "#ffdad6",
+                        "surface": "#f9f9ff",
+                        "secondary": "#5c5f61",
+                        "on-error": "#ffffff",
+                        "tertiary": "#3a495f",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-container": "#dad7ff",
+                        "inverse-primary": "#c3c0ff",
+                        "on-secondary-container": "#626567",
+                        "on-primary": "#ffffff",
+                        "secondary-fixed": "#e0e3e5",
+                        "surface-container-highest": "#d8e3fb",
+                        "outline-variant": "#c7c4d8",
+                        "tertiary-fixed": "#d3e4fe",
+                        "outline": "#777587",
+                        "on-secondary": "#ffffff",
+                        "secondary-container": "#e0e3e5",
+                        "on-secondary-fixed": "#191c1e",
+                        "inverse-surface": "#263143",
+                        "on-tertiary-fixed": "#0b1c30",
+                        "on-error-container": "#93000a",
+                        "on-secondary-fixed-variant": "#444749",
+                        "error": "#ba1a1a",
+                        "on-surface-variant": "#464555",
+                        "on-tertiary-fixed-variant": "#38485d",
+                        "primary-fixed": "#e2dfff",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-container": "#516177",
+                        "tertiary-fixed-dim": "#b7c8e1",
+                        "surface-container-high": "#dee8ff",
+                        "on-tertiary-container": "#ccdcf7",
+                        "surface-variant": "#d8e3fb",
+                        "on-primary-fixed-variant": "#3323cc",
+                        "primary-container": "#4f46e5",
+                        "surface-dim": "#cfdaf2",
+                        "primary": "#3525cd",
+                        "inverse-on-surface": "#ecf1ff",
+                        "secondary-fixed-dim": "#c4c7c9",
+                        "on-background": "#111c2d",
+                        "surface-container": "#e7eeff",
+                        "background": "#f9f9ff",
+                        "surface-container-low": "#f0f3ff",
+                        "on-primary-fixed": "#0f0069",
+                        "on-surface": "#111c2d",
+                        "surface-tint": "#4d44e3",
+                        "surface-bright": "#f9f9ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "1.5rem",
+                        "lg": "1.5rem",
+                        "2xl": "3rem",
+                        "sm": "0.5rem",
+                        "xl": "2rem",
+                        "margin-mobile": "1rem",
+                        "xs": "0.25rem",
+                        "md": "1rem",
+                        "max-width-card": "400px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "label-md": ["Inter"],
+                        "display-lg-mobile": ["Inter"],
+                        "headline-sm": ["Inter"],
+                        "body-md": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "headline-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }],
+                        "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0em", "fontWeight": "500" }],
+                        "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "display-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }],
+                        "display-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen flex items-center justify-center p-margin-mobile md:p-0">
+<div class="bg-surface-container-lowest max-w-max-width-card w-full rounded-xl p-xl flex flex-col items-center text-center relative border border-secondary/10" style="box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.04);">
+<div class="relative mb-md">
+<img class="w-24 h-24 rounded-full object-cover border-2 border-surface-container-lowest" data-alt="A portrait of a professional individual in a minimalist studio setting. The lighting is soft and diffused, creating a calm and inviting atmosphere. The person is looking directly at the camera with a subtle smile. The background is a crisp, clean white, aligning with a sophisticated light-mode aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWKwTQRETH2iISBXxEEEePTJTBDifhyyJrM_Awl43dK1vuA5YXlZw_vjOuaKE2m_tm2wnNpINqZUEt8G_RoPZrS3v7GKl-Tg65872p_OY7p05GVPEmOOPlx4UiCyCZiYVSMHucfF7bTluWvlOY2Zl2xa-ZAyvpIgBBOzU-uuwZxP4GH6Mms_imJeSKO7vzKspUo7xvtlKcZvXOPGxSsbjPBicTTqmIFt9gh61gcZgjj6xOkJ4Q6fg" style="box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);"/>
+<div class="absolute bottom-0 right-0 w-4 h-4 bg-primary rounded-full border-2 border-surface-container-lowest"></div>
+</div>
+<h1 class="font-headline-md text-headline-md text-on-surface mb-xs">Eleanor Vance</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md">Senior Product Designer</p>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-lg max-w-[280px]">Crafting intuitive digital experiences. Passionate about minimalism and typography.</p>
+<div class="flex gap-md w-full mb-lg">
+<button class="flex-1 bg-primary text-on-primary font-label-md text-label-md py-3 rounded-lg hover:bg-primary/90 transition-colors">
+                Follow
+            </button>
+<button class="flex-1 border border-outline-variant text-on-surface font-label-md text-label-md py-3 rounded-lg hover:bg-surface-container-low transition-colors">
+                Message
+            </button>
+</div>
+<div class="flex gap-gutter pt-md border-t border-secondary-container/50 w-full justify-center">
+<a class="text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center" href="#">
+<svg fill="currentColor" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.46 6.00001C21.69 6.35001 20.86 6.58001 20 6.69001C20.88 6.16001 21.56 5.32001 21.88 4.31001C21.05 4.81001 20.13 5.16001 19.16 5.36001C18.37 4.50001 17.26 4.00001 16 4.00001C13.65 4.00001 11.73 5.92001 11.73 8.27001C11.73 8.60001 11.77 8.93001 11.84 9.24001C8.28 9.06001 5.11 7.38001 3 4.79001C2.63 5.42001 2.42 6.16001 2.42 6.94001C2.42 8.43001 3.18 9.75001 4.33 10.5C3.62 10.5 2.96 10.3 2.38 10C2.38 10.02 2.38 10.04 2.38 10.06C2.38 12.14 3.86 13.88 5.82 14.28C5.46 14.38 5.09 14.43 4.7 14.43C4.43 14.43 4.17 14.4 3.9 14.35C4.45 16.05 6.03 17.29 7.9 17.33C6.43 18.48 4.58 19.16 2.58 19.16C2.24 19.16 1.9 19.14 1.58 19.1C3.47 20.31 5.71 21 8.11 21C15.93 21 20.21 14.53 20.21 8.92001C20.21 8.74001 20.21 8.55001 20.2 8.37001C21.04 7.76001 21.78 7.02001 22.46 6.00001Z"></path>
+</svg>
+</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center" href="#">
+<svg fill="currentColor" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM8.33 17.67H5.67V9H8.33V17.67ZM7 7.67C6.08 7.67 5.33 6.92 5.33 6C5.33 5.08 6.08 4.33 7 4.33C7.92 4.33 8.67 5.08 8.67 6C8.67 6.92 7.92 7.67 7 7.67ZM18.33 17.67H15.67V13.33C15.67 12.16 15.63 10.67 14 10.67C12.33 10.67 12 11.96 12 13.25V17.67H9.33V9H11.89V10.18H11.93C12.28 9.5 13.16 8.83 14.39 8.83C17.02 8.83 17.5 10.56 17.5 12.83V17.67H18.33Z"></path>
+</svg>
+</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center" href="#">
+<svg fill="currentColor" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.8 2H16.2C19.4 2 22 4.6 22 7.8V16.2C22 19.4 19.4 22 16.2 22H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2ZM7.6 4C5.6 4 4 5.6 4 7.6V16.4C4 18.4 5.6 20 7.6 20H16.4C18.4 20 20 18.4 20 16.4V7.6C20 5.6 18.4 4 16.4 4H7.6ZM12 6.8C14.8719 6.8 17.2 9.12812 17.2 12C17.2 14.8719 14.8719 17.2 12 17.2C9.12812 17.2 6.8 14.8719 6.8 12C6.8 9.12812 9.12812 6.8 12 6.8ZM12 8.8C10.2327 8.8 8.8 10.2327 8.8 12C8.8 13.7673 10.2327 15.2 12 15.2C13.7673 15.2 15.2 13.7673 15.2 12C15.2 10.2327 13.7673 8.8 12 8.8ZM17.5 5.2C18.1075 5.2 18.6 5.69249 18.6 6.3C18.6 6.90751 18.1075 7.4 17.5 7.4C16.8925 7.4 16.4 6.90751 16.4 6.3C16.4 5.69249 16.8925 5.2 17.5 5.2Z"></path>
+</svg>
+</a>
+</div>
+</div>
+</body></html>
