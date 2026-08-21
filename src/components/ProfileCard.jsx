@@ -1,5 +1,7 @@
 import { TwitterIcon, FacebookIcon, InstagramIcon } from './icons.jsx';
 
+import profileImage from '../img/photo-profile.jpg';
+
 const ProfileCard = ({ onOpenPortfolio = () => {} }) => {
   return (
     <div
@@ -10,7 +12,7 @@ const ProfileCard = ({ onOpenPortfolio = () => {} }) => {
         <img
           className="w-24 h-24 rounded-full object-cover border-2 border-surface-container-lowest"
           data-alt="A portrait of a professional individual in a minimalist studio setting. The lighting is soft and diffused, creating a calm and inviting atmosphere. The person is looking directly at the camera with a subtle smile. The background is a crisp, clean white, aligning with a sophisticated light-mode aesthetic."
-          src="https://drive.google.com/uc?export=view&id=1D0sfgt2tBnXJ_x_QcE-diwjRBRw3DWtG"
+          src={profileImage}
           style={{ boxShadow: '0px 2px 8px rgba(0, 0, 0, 0.08)' }}
           alt="Portrait of Junaidi"
         />
